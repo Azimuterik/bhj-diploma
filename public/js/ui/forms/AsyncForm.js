@@ -18,10 +18,8 @@ class AsyncForm {
     if (!element) {
       throw new Error('Элемент не существует');
     }
-
     this.element = element;
     this.registerEvents();
-
   }
 
   /**
@@ -43,7 +41,6 @@ class AsyncForm {
    * }
    * */
   getData() {
-
     const formData = new FormData(this.element);
     return Object.fromEntries(formData.entries());
   }
