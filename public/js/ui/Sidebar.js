@@ -40,6 +40,9 @@ class Sidebar {
    * выходу устанавливает App.setState( 'init' )
    * */
   static initAuthLinks() {
-
+    document.querySelector('.menu-item_register').addEventListener('click', (e) => {
+      e.preventDefault();
+      App.getModal('register').open();
+    })
   }
 }
