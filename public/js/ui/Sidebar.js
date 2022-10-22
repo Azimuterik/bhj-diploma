@@ -44,5 +44,10 @@ class Sidebar {
       e.preventDefault();
       App.getModal('register').open();
     })
+
+    document.querySelector('.menu-item_login').onclick = e => {
+      e.preventDefault();
+      App.getModal('login').open();
+    }
   }
 }
