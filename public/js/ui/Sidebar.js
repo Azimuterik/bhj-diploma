@@ -19,6 +19,17 @@ class Sidebar {
    * */
   static initToggleButton() {
 
+    document.querySelector('.sidebar-toggle').addEventListener('click', (e) => {
+
+      e.preventDefault();
+      if (document.body.classList.contains('sidebar-open') && document.body.classList.contains('sidebar-collapse')) {
+        document.body.classList.remove('sidebar-open');
+        document.body.classList.remove('sidebar-collapse')
+      } else {
+        document.body.classList.add('sidebar-open');
+        document.body.classList.add('sidebar-collapse');
+      }
+    });
   }
 
   /**
