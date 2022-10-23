@@ -30,6 +30,14 @@
    * вызывает AccountsWidget.onSelectAccount()
    * */
   registerEvents() {
+    this.element.querySelector('.create-account').onclick = e => {
+      e.preventDefault();
+
+      App.getModal('createAccount').open();
+    };
+
+
+
     this.element.onclick = e => {
       if (e.target.classList.contains('header')) {
         return;
