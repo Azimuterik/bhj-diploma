@@ -77,7 +77,7 @@ class AccountsWidget {
    * AccountsWidget.getAccountHTML HTML-код элемента
    * и добавляет его внутрь элемента виджета
    * */
-  renderItem(data){
-
+  renderItem(data) {
+    this.element.insert.AdjacentHTML('beforeend', this.getAccountHTML(data));
   }
 }
