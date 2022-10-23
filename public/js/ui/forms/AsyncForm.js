@@ -5,9 +5,7 @@
  * с таких форм собираются и передаются в метод onSubmit
  * для последующей обработки
  * */
-class AsyncForm {
-
-  
+ class AsyncForm {
   /**
    * Если переданный элемент не существует,
    * необходимо выкинуть ошибку.
@@ -27,17 +25,14 @@ class AsyncForm {
    * вызывает метод submit()
    * */
   registerEvents() {
-    this.element.onSubmit = e => {
+    this.element.onsubmit = e => {
       e.preventDefault();
       this.submit();
     }
   }
 
   /**
-   * Преобразует данные формы в объект вида
-   * {
-   *  'название поля формы 1': 'значение поля формы 1',
-   *  'название поля формы 2': 'значение поля формы 2'
+	@@ -32,18 +39,19 @@ class AsyncForm {
    * }
    * */
   getData() {
@@ -45,8 +40,8 @@ class AsyncForm {
     return Object.fromEntries(formData.entries());
   }
 
-  onSubmit(options){
-
+  onSubmit(options) {
+    
   }
 
   /**
