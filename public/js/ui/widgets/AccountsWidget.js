@@ -94,9 +94,7 @@
 
     this.prevActiveElement = element;
 
-    App.showPage('transactions', {
-      account_id: element.dataset.id
-    });
+    App.showPage('transactions', {account_id: element.dataset.id});
   }
 
   /**
