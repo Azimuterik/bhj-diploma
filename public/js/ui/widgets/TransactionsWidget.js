@@ -12,7 +12,11 @@ class TransactionsWidget {
    * необходимо выкинуть ошибку.
    * */
   constructor( element ) {
-
+    if (!element) {
+      throw new Error('Элемент не найден');
+    }
+    this.element = element;
+    this.registerEvents();
   }
   /**
    * Регистрирует обработчики нажатия на
@@ -20,7 +24,13 @@ class TransactionsWidget {
    * При нажатии вызывает Modal.open() для
    * экземпляра окна
    * */
-  registerEvents() {
+   registerEvents() {
+    this.element.querySelector('.create-income-button').onclick = e => {
+      App.getModal('newIncome').open();
+    }
 
+    this.element.querySelector('.create-expense-button').onclick = e => {
+      App.getModal('newExpense').open();
+    }
   }
 }

@@ -15,7 +15,7 @@ class UserWidget {
    * */
   constructor(element){
     if (!element) {
-      throw new Error("Ошибка: gередан пустой элемент");
+      throw new Error("Элемент не найден");
     }
     this.element = element;
   }

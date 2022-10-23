@@ -38,7 +38,7 @@
     {
       "name": "test Account",
       "user_id": "1",
-      "id": "15v56aol9laoxec"
+      "id": "15v5330l9lk01yp"
     }
   ],
   "transactions": [
@@ -176,6 +176,33 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "15v5vgl9ln6qd6",
+      "type": "income",
+      "name": "text",
+      "sum": 100,
+      "account_id": "2",
+      "user_id": "1",
+      "created_at": "2022-10-23T17:47:02.009Z"
+    },
+    {
+      "id": "15v55acl9lnncrw",
+      "type": "expense",
+      "name": "text",
+      "sum": 100,
+      "account_id": "15v5330l9lk01yp",
+      "user_id": "1",
+      "created_at": "2022-10-23T17:59:57.547Z"
+    },
+    {
+      "id": "15v5670l9lo5bjj",
+      "type": "income",
+      "name": "text",
+      "sum": 5000,
+      "account_id": "15v5330l9lk01yp",
+      "user_id": "1",
+      "created_at": "2022-10-23T18:13:55.758Z"
     }
   ]
 }
